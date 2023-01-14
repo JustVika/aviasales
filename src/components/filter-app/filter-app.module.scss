@@ -1,0 +1,89 @@
+.filter {
+  width: 232px;
+  height: 252px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+  color: #4a4a4a;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    width: auto;
+    height: 200px;
+    margin-right: 10px;
+  }
+  &__tittle {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 12px;
+    padding: 20px;
+    text-transform: uppercase;
+    @media (max-width: 768px) {
+      font-size: 8px;
+      padding: 10px;
+    }
+  }
+  &__list {
+    font-size: 14px;
+    line-height: 20px;
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
+  }
+
+  &__item {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    padding-left: 20px;
+    &:hover {
+      background: #f1fcff;
+    }
+    @media (max-width: 768px) {
+      padding-left: 10px;
+    }
+  }
+  &__label {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    @media (max-width: 768px) {
+      padding-left: 10px;
+    }
+  }
+  &__input {
+    appearance: none;
+  }
+  &__input:checked + &__check-box {
+    border: none;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='19' height='19' rx='1.5' stroke='%232196F3'/%3E%3Cpath d='M8.28571 14L4 10.1612L5.20857 9.0787L8.28571 11.8273L14.7914 6L16 7.09021L8.28571 14Z' fill='%232196F3'/%3E%3C/svg%3E%0A");
+  }
+  &__check-box {
+    margin-right: 10px;
+    margin-left: -20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #9abbce;
+    border-radius: 2px;
+
+    @media (max-width: 768px) {
+      margin-left: -10px;
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

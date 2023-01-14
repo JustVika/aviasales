@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+li {
+  list-style: none;
+}
+.app-wrapper {
+  background: #f3f7fa;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 103px;
+  font-family: "Open Sans";
+}
+
+@media (max-width: 768px) {
+  .app-wrapper {
+    padding: 0 10px;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+.main {
+  display: flex;
+}
+
+.main__content {
+  flex-grow: 1;
+  margin-bottom: 50px;
+}
+.loading {
+  width: 100%;
+  margin: 20px auto;
+}
